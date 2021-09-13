@@ -16,5 +16,27 @@ namespace Ejercicio2___Guía3_MM200149
         {
             InitializeComponent();
         }
+
+        private void btnnuevo_Click(object sender, EventArgs e)
+        {
+            gbxnuevoalum.Visible = true;
+            btnnuevo.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            gbxlistado.Visible = true;
+        }
+
+        private void btnreporte_Click(object sender, EventArgs e)
+        {
+            gbxreporte.Visible = true;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            gbxnuevoalum.Visible = false;
+            btnnuevo.Visible = true;
+        }
     }
 }
