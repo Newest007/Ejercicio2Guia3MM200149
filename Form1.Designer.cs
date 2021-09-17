@@ -51,6 +51,7 @@ namespace Ejercicio2___Guía3_MM200149
             this.button2 = new System.Windows.Forms.Button();
             this.dtgreporte = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.gbxnuevoalum.SuspendLayout();
             this.gbxlistado.SuspendLayout();
             this.gbxreporte.SuspendLayout();
@@ -121,11 +122,11 @@ namespace Ejercicio2___Guía3_MM200149
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(66, 260);
+            this.label4.Location = new System.Drawing.Point(20, 260);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 21);
+            this.label4.Size = new System.Drawing.Size(232, 21);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Materia cursada";
+            this.label4.Text = "Materia cursada (Utilize el acronimo)";
             // 
             // txtcarnet
             // 
@@ -199,11 +200,12 @@ namespace Ejercicio2___Guía3_MM200149
             // 
             // gbxreporte
             // 
+            this.gbxreporte.Controls.Add(this.button4);
             this.gbxreporte.Controls.Add(this.dtgreporte);
             this.gbxreporte.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxreporte.Location = new System.Drawing.Point(570, 128);
             this.gbxreporte.Name = "gbxreporte";
-            this.gbxreporte.Size = new System.Drawing.Size(259, 441);
+            this.gbxreporte.Size = new System.Drawing.Size(259, 394);
             this.gbxreporte.TabIndex = 2;
             this.gbxreporte.TabStop = false;
             this.gbxreporte.Text = "Reporte de estudiantes";
@@ -290,6 +292,16 @@ namespace Ejercicio2___Guía3_MM200149
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(74, 338);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(97, 31);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "Ocultar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,6 +352,7 @@ namespace Ejercicio2___Guía3_MM200149
         private System.Windows.Forms.DataGridView dtgestudiantes;
         private System.Windows.Forms.DataGridView dtgreporte;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

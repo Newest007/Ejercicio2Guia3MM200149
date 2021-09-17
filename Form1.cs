@@ -32,6 +32,7 @@ namespace Ejercicio2___Guía3_MM200149
         private void btnreporte_Click(object sender, EventArgs e)
         {
             gbxreporte.Visible = true;
+            btnreporte.Visible = false;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -73,7 +74,7 @@ namespace Ejercicio2___Guía3_MM200149
             txtcalificaciones.Clear();
             txtapellido.Clear();
 
-
+            MessageBox.Show("Datos añadidos correctamente", "Éxito");
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -103,6 +104,12 @@ namespace Ejercicio2___Guía3_MM200149
         {
             gbxlistado.Visible = false;
             btnlistado.Visible = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            btnreporte.Visible = true;
+            gbxreporte.Visible = false;
         }
     }
 }
