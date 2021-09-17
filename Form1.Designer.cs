@@ -30,142 +30,73 @@ namespace Ejercicio2___Guía3_MM200149
         private void InitializeComponent()
         {
             this.gbxnuevoalum = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtcalificaciones = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtmateria = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtcarnet = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtapellido = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbxlistado = new System.Windows.Forms.GroupBox();
             this.gbxreporte = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.btnlistado = new System.Windows.Forms.Button();
             this.btnreporte = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.dtgestudiantes = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dtgreporte = new System.Windows.Forms.DataGridView();
             this.gbxnuevoalum.SuspendLayout();
+            this.gbxlistado.SuspendLayout();
+            this.gbxreporte.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgestudiantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgreporte)).BeginInit();
             this.SuspendLayout();
             // 
             // gbxnuevoalum
             // 
+            this.gbxnuevoalum.Controls.Add(this.button2);
             this.gbxnuevoalum.Controls.Add(this.button1);
-            this.gbxnuevoalum.Controls.Add(this.textBox5);
+            this.gbxnuevoalum.Controls.Add(this.txtcalificaciones);
             this.gbxnuevoalum.Controls.Add(this.label5);
-            this.gbxnuevoalum.Controls.Add(this.textBox4);
+            this.gbxnuevoalum.Controls.Add(this.txtmateria);
             this.gbxnuevoalum.Controls.Add(this.label4);
-            this.gbxnuevoalum.Controls.Add(this.textBox3);
+            this.gbxnuevoalum.Controls.Add(this.txtcarnet);
             this.gbxnuevoalum.Controls.Add(this.label3);
-            this.gbxnuevoalum.Controls.Add(this.textBox2);
+            this.gbxnuevoalum.Controls.Add(this.txtapellido);
             this.gbxnuevoalum.Controls.Add(this.label2);
-            this.gbxnuevoalum.Controls.Add(this.textBox1);
+            this.gbxnuevoalum.Controls.Add(this.txtnombre);
             this.gbxnuevoalum.Controls.Add(this.label1);
             this.gbxnuevoalum.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxnuevoalum.Location = new System.Drawing.Point(26, 128);
             this.gbxnuevoalum.Name = "gbxnuevoalum";
-            this.gbxnuevoalum.Size = new System.Drawing.Size(259, 441);
+            this.gbxnuevoalum.Size = new System.Drawing.Size(259, 452);
             this.gbxnuevoalum.TabIndex = 0;
             this.gbxnuevoalum.TabStop = false;
             this.gbxnuevoalum.Text = "Ingresar un nuevo estudiante";
             this.gbxnuevoalum.Visible = false;
             // 
-            // gbxlistado
+            // button1
             // 
-            this.gbxlistado.AutoSize = true;
-            this.gbxlistado.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxlistado.Location = new System.Drawing.Point(291, 128);
-            this.gbxlistado.Name = "gbxlistado";
-            this.gbxlistado.Size = new System.Drawing.Size(259, 441);
-            this.gbxlistado.TabIndex = 1;
-            this.gbxlistado.TabStop = false;
-            this.gbxlistado.Text = "Listado de estudiantes Inscritos";
-            this.gbxlistado.Visible = false;
+            this.button1.Location = new System.Drawing.Point(156, 410);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 31);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Regresar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // gbxreporte
+            // txtcalificaciones
             // 
-            this.gbxreporte.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxreporte.Location = new System.Drawing.Point(562, 128);
-            this.gbxreporte.Name = "gbxreporte";
-            this.gbxreporte.Size = new System.Drawing.Size(259, 441);
-            this.gbxreporte.TabIndex = 2;
-            this.gbxreporte.TabStop = false;
-            this.gbxreporte.Text = "Reporte de estudiantes";
-            this.gbxreporte.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(53, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre del alumno";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(55, 134);
-            this.textBox1.MaxLength = 10;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 30);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(55, 181);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Apellido del alumno";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(55, 208);
-            this.textBox2.MaxLength = 10;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 30);
-            this.textBox2.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(58, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 21);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Carnet del alumno";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(55, 63);
-            this.textBox3.MaxLength = 9;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 30);
-            this.textBox3.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(66, 260);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 21);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Materia cursada";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(55, 284);
-            this.textBox4.MaxLength = 15;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(127, 30);
-            this.textBox4.TabIndex = 7;
+            this.txtcalificaciones.Location = new System.Drawing.Point(55, 358);
+            this.txtcalificaciones.MaxLength = 4;
+            this.txtcalificaciones.Name = "txtcalificaciones";
+            this.txtcalificaciones.Size = new System.Drawing.Size(127, 30);
+            this.txtcalificaciones.TabIndex = 9;
             // 
             // label5
             // 
@@ -177,13 +108,103 @@ namespace Ejercicio2___Guía3_MM200149
             this.label5.TabIndex = 8;
             this.label5.Text = "Calificaciones en la materia";
             // 
-            // textBox5
+            // txtmateria
             // 
-            this.textBox5.Location = new System.Drawing.Point(55, 358);
-            this.textBox5.MaxLength = 4;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(127, 30);
-            this.textBox5.TabIndex = 9;
+            this.txtmateria.Location = new System.Drawing.Point(55, 284);
+            this.txtmateria.MaxLength = 15;
+            this.txtmateria.Name = "txtmateria";
+            this.txtmateria.Size = new System.Drawing.Size(127, 30);
+            this.txtmateria.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(66, 260);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 21);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Materia cursada";
+            // 
+            // txtcarnet
+            // 
+            this.txtcarnet.Location = new System.Drawing.Point(55, 63);
+            this.txtcarnet.MaxLength = 9;
+            this.txtcarnet.Name = "txtcarnet";
+            this.txtcarnet.Size = new System.Drawing.Size(127, 30);
+            this.txtcarnet.TabIndex = 5;
+            this.txtcarnet.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(58, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 21);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Carnet del alumno";
+            // 
+            // txtapellido
+            // 
+            this.txtapellido.Location = new System.Drawing.Point(55, 208);
+            this.txtapellido.MaxLength = 10;
+            this.txtapellido.Name = "txtapellido";
+            this.txtapellido.Size = new System.Drawing.Size(127, 30);
+            this.txtapellido.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(55, 181);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 21);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Apellido del alumno";
+            // 
+            // txtnombre
+            // 
+            this.txtnombre.Location = new System.Drawing.Point(55, 134);
+            this.txtnombre.MaxLength = 10;
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(127, 30);
+            this.txtnombre.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(53, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nombre del alumno";
+            // 
+            // gbxlistado
+            // 
+            this.gbxlistado.AutoSize = true;
+            this.gbxlistado.Controls.Add(this.dtgestudiantes);
+            this.gbxlistado.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxlistado.Location = new System.Drawing.Point(291, 128);
+            this.gbxlistado.Name = "gbxlistado";
+            this.gbxlistado.Size = new System.Drawing.Size(259, 355);
+            this.gbxlistado.TabIndex = 1;
+            this.gbxlistado.TabStop = false;
+            this.gbxlistado.Text = "Listado de estudiantes Inscritos";
+            this.gbxlistado.Visible = false;
+            // 
+            // gbxreporte
+            // 
+            this.gbxreporte.Controls.Add(this.dtgreporte);
+            this.gbxreporte.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxreporte.Location = new System.Drawing.Point(562, 128);
+            this.gbxreporte.Name = "gbxreporte";
+            this.gbxreporte.Size = new System.Drawing.Size(259, 441);
+            this.gbxreporte.TabIndex = 2;
+            this.gbxreporte.TabStop = false;
+            this.gbxreporte.Text = "Reporte de estudiantes";
+            this.gbxreporte.Visible = false;
             // 
             // btnnuevo
             // 
@@ -218,16 +239,6 @@ namespace Ejercicio2___Guía3_MM200149
             this.btnreporte.UseVisualStyleBackColor = true;
             this.btnreporte.Click += new System.EventHandler(this.btnreporte_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(139, 394);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 41);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Regresar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -237,6 +248,32 @@ namespace Ejercicio2___Guía3_MM200149
             this.label6.Size = new System.Drawing.Size(245, 33);
             this.label6.TabIndex = 6;
             this.label6.Text = "Ejercicio 2 MM200149";
+            // 
+            // dtgestudiantes
+            // 
+            this.dtgestudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgestudiantes.Location = new System.Drawing.Point(13, 29);
+            this.dtgestudiantes.Name = "dtgestudiantes";
+            this.dtgestudiantes.Size = new System.Drawing.Size(228, 286);
+            this.dtgestudiantes.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 400);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 41);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Ingresar datos";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // dtgreporte
+            // 
+            this.dtgreporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgreporte.Location = new System.Drawing.Point(17, 32);
+            this.dtgreporte.Name = "dtgreporte";
+            this.dtgreporte.Size = new System.Drawing.Size(228, 286);
+            this.dtgreporte.TabIndex = 1;
             // 
             // Form1
             // 
@@ -254,6 +291,10 @@ namespace Ejercicio2___Guía3_MM200149
             this.Text = "Ejercicio 2 - Guía3 MM200149";
             this.gbxnuevoalum.ResumeLayout(false);
             this.gbxnuevoalum.PerformLayout();
+            this.gbxlistado.ResumeLayout(false);
+            this.gbxreporte.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgestudiantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgreporte)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,23 +303,26 @@ namespace Ejercicio2___Guía3_MM200149
         #endregion
 
         private System.Windows.Forms.GroupBox gbxnuevoalum;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtcarnet;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtapellido;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gbxlistado;
         private System.Windows.Forms.GroupBox gbxreporte;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtcalificaciones;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtmateria;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnnuevo;
         private System.Windows.Forms.Button btnlistado;
         private System.Windows.Forms.Button btnreporte;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dtgestudiantes;
+        private System.Windows.Forms.DataGridView dtgreporte;
     }
 }
 

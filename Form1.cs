@@ -38,5 +38,57 @@ namespace Ejercicio2___Guía3_MM200149
             gbxnuevoalum.Visible = false;
             btnnuevo.Visible = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DatosBásicos alum = new DatosBásicos();
+            AlumnoCarnet datosalum = new AlumnoCarnet();
+            alum.Carnet = txtcarnet.Text;
+            datosalum.Carnet = txtcarnet.Text;
+            alum.Nombre = txtnombre.Text;
+            datosalum.Nombre = txtnombre.Text;
+            alum.Apellido = txtapellido.Text;
+            alum.Materia = txtmateria.Text;
+            alum.Calificaciones = float.Parse(txtcalificaciones.Text);
+
+            if(edit_indice > -1)
+            {
+                Datos[edit_indice] = alum;
+                Alumno[edit_indice] = datosalum;
+                edit_indice = -1;
+            }
+            else
+            {
+                Datos.Add(alum);
+                Alumno.Add(datosalum);
+            }
+
+            ActualizarGrid();
+
+
+            txtcarnet.Clear();
+            
+
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private List<DatosBásicos> Datos = new List<DatosBásicos>();
+        private List<AlumnoCarnet> Alumno = new List<AlumnoCarnet>();
+        private int edit_indice = -1;
+
+        private void ActualizarGrid()
+        {
+            dtgestudiantes.DataSource = null;
+            dtgestudiantes.DataSource = Alumno;
+            dtgreporte.DataSource = null;
+            dtgreporte.DataSource = Datos;
+
+        }
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio2___Guía3_MM200149
 {
-    class Alumno
+    class DatosBásicos
     {
         string carnet;
         public string Carnet
@@ -36,9 +36,9 @@ namespace Ejercicio2___Guía3_MM200149
             set { materia = value; }
         }
 
-        float[] calificaciones = new float[3];
+        double calificaciones;
 
-        public float[] Calificaciones
+        public double Calificaciones
         {
             get { return calificaciones; }
             set { calificaciones = value; }
