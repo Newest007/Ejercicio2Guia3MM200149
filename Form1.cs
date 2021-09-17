@@ -26,6 +26,7 @@ namespace Ejercicio2___Guía3_MM200149
         private void button1_Click(object sender, EventArgs e)
         {
             gbxlistado.Visible = true;
+            btnlistado.Visible = false;
         }
 
         private void btnreporte_Click(object sender, EventArgs e)
@@ -67,7 +68,10 @@ namespace Ejercicio2___Guía3_MM200149
 
 
             txtcarnet.Clear();
-            
+            txtmateria.Clear();
+            txtnombre.Clear();
+            txtcalificaciones.Clear();
+            txtapellido.Clear();
 
 
         }
@@ -90,5 +94,15 @@ namespace Ejercicio2___Guía3_MM200149
 
         }
 
+        private void gbxlistado_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            gbxlistado.Visible = false;
+            btnlistado.Visible = true;
+        }
     }
 }
